@@ -36,3 +36,14 @@ spring:
   jackson.date-format: yyyy-MM-dd HH:mm:ss
   jackson.time-zone: Asia/Shanghai
   jackson.default-property-inclusion: non_null
+
+rest:
+  api:
+    prefix: /api/v1.1
+
+mybatis-plus:
+  typeAliasesPackage: com.hitech.skeleton.system.entity
+  mapper-locations: classpath:/com/hitech/skeleton/system/mapper/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false

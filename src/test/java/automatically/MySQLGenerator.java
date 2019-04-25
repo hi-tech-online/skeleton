@@ -37,7 +37,7 @@ public class MySQLGenerator {
     private static String username = "hitech";
     private static String password = "20190422";
 
-    private static String parentPackege = "com.hitech.skeleton";
+    private static String parentPackege = "com.hitech.skeleton.modules";
 
     /**
      * 以下不用修改

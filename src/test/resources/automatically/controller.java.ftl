@@ -26,12 +26,12 @@ import ${superControllerClassPackage};
  * @author ${author}
  * @since ${date}
  */
+@Slf4j
 <#if restControllerStyle>
 @RestController
 <#else>
 @Controller
 </#if>
-@Slf4j
 @RequestMapping("/api<#if package.ModuleName??>/${package.ModuleName}</#if>/<#if controllerMappingHyphenStyle??>${controllerMappingHyphen}<#else>${table.entityPath}</#if>")
 <#if kotlin>
 class ${table.controllerName}<#if superControllerClass??> : ${superControllerClass}()</#if>
